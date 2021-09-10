@@ -1,3 +1,6 @@
+CREATE DATABASE inlock_games_tarde;
+GO
+
 USE inlock_games_tarde;
 GO
 
