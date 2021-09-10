@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "34fd1eef-de9a-47db-8326-57891cdccb47",
+		"name": "senai_inlock_webApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Usuarios.ListarUsuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Usuarios/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuarios",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jogo",
+			"item": [
+				{
+					"name": "Jogo.BuscarPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Jogos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Jogos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jogo.ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Jogos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Jogos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jogo.Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeJogo\" : \"GTAV\",\r\n    \"descricao\": \"Grand Theft Auto V é um jogo eletrônico de ação-aventura desenvolvido pela Rockstar North e        publicado pela Rockstar Games.\",\r\n    \"dataLancamento\":\"2012-04-23T18:25:43.511Z\",\r\n    \"valor\":\"90\",\r\n    \"idEstudio\":\"2\"\r\n\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Jogos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Jogos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jogo.ExcluirPorId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Jogos/excluir/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Jogos",
+								"excluir",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
